@@ -1,0 +1,191 @@
+.admin-dashboard {
+  width: 100%;
+}
+
+.admin-dashboard h1 {
+  animation: none;
+  font-size: 30px;
+}
+
+.header {
+  background-color: #000000;
+  text-align: center;
+  width: 100%;
+}
+
+.sidebar-dashboard {
+  background-color: #f8f9fa;
+  border-right: 1px solid #ddd;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  transition: all 0.3s;
+  overflow-y: auto;
+  padding-top: 20px;
+}
+
+.sidebar-dashboard.open {
+  left: 0;
+}
+
+.sidebar-dashboard .close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.sidebar-dashboard ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.sidebar-dashboard ul li {
+  padding: 10px;
+  text-align: center;
+}
+
+.sidebar-dashboard ul li button {
+  width: 100%;
+  background: none;
+  border: 2px solid black;
+  background-color: #000000;
+  padding: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: none; /* Hide buttons by default */
+}
+
+.sidebar-dashboard.open ul li button {
+  display: block; /* Show buttons when sidebar is open */
+}
+
+.sidebar-dashboard ul li button:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid black;
+}
+
+.sidebar-dashboard ul li ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+}
+
+.sidebar-dashboard ul li ul li {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.sidebar-dashboard ul li ul li:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid black;
+}
+
+.btn-primary {
+  margin-bottom: 20px;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 0;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.report {
+  margin-top: 20px;
+}
+
+.report h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table-bordered {
+  border: 1px solid #ddd;
+}
+
+.table th,
+.table td {
+  text-align: center;
+  padding: 8px;
+}
+
+.table th {
+  background-color: #f8f9fa;
+}
+
+.dashboard-container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table-data {
+  padding: 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the content */
+}
+
+/* Responsive table columns */
+.table th,
+.table td {
+  width: auto;
+  word-wrap: break-word;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 767px) {
+  .sidebar-part {
+    position: absolute;
+    width: 100%;
+  }
+
+  .table-data {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .sidebar-dashboard {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn-icon {
+    display: block;
+    top: 10px;
+    left: 10px;
+  }
+
+  .header h1 {
+    font-size: 20px; /* Smaller header font size for small screens */
+  }
+
+  .table th,
+  .table td {
+    padding: 5px; /* Reduce padding for smaller screens */
+  }
+}

@@ -1,0 +1,71 @@
+
+.text-container {
+  flex: 1;
+  white-space: pre-wrap; /* Allow text to wrap to multiple lines */
+  color: #ffffff;
+}
+
+#blue {
+  background-color:  #373f41;
+  /* height: 100vh; */
+}
+
+.logo-container {
+  position: absolute; /* Position the logo container absolutely */
+  top: 40%; /* Move the logo container to the vertical center of the main container */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+}
+h1 {
+  font-size: 2rem;
+  line-height: 1.5;
+  overflow: hidden; /* Clip overflowing content */
+  white-space: nowrap; /* Prevent wrapping */
+  animation: typing 4s ease-in-out alternate infinite; /* Adjust duration and timing function */
+}
+
+#login-button,
+#signup-button {
+  padding: 10px 50px;
+  margin: 5px 0;
+  font-size: 16px;
+  border: 2px solid;
+  border-image: linear-gradient(to right, #005a8d 0%, #ff6600 50%);
+  border-image-slice: 1;
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  opacity: 0.9; /* Initially hide buttons */
+  transition: opacity 1s ease-in-out; /* Smooth transition effect */
+}
+
+#login-button:hover,
+#signup-button:hover {
+  background-color: #ff6600;
+  border-image: linear-gradient(to right, #005a8d 0%, #ff6600 50%);
+  border-image-slice: 1;
+  color: #ffffff;
+}
+
+.description {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #020202;
+}
+
+@media (max-width: 768px) {
+  .logo-container {
+    position: absolute;
+    top: 17%;
+  }
+}
+
+/* Animation for the welcome text */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.buttons-wrapper {
+  display: flex;
+  gap: 20px;
+}

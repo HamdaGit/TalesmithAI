@@ -1,0 +1,166 @@
+.sidebar {
+  width: 250px;
+  height: 100%;
+  background-color:  #373f41;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  transition: left 0.3s ease-in-out;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  color: #0b0b0b;
+  font-size: 24px;
+  cursor: pointer;
+}
+/* .toggle-btn:hover{
+  background-color: ;
+  
+
+
+} */
+
+.toggle-btn:focus {
+  outline: none;
+}
+
+.new-chat {
+  margin-top: 30px;
+  /* Add margin to create space between new-chat and chat history */
+  border: 1px solid hsl(270, 13%, 88%) ; /* Add border */
+  border-radius: 2px; /* Add border radius */
+  padding: 10px; /* Add padding */
+  transition: border-color 0.3s ease; /* Add transition effect */
+  height: 40px;
+  display: flex; /* Change display to flex */
+  align-items: center; /* Center items vertically */
+
+  
+}
+
+.new-chat:hover {
+  background-color: #7a7a7a ;
+  
+  
+}
+.new-chat:hover a{
+  color: #040303;
+}
+
+.new-chat a {
+  text-decoration: none;
+  color: #f8f9fa;  /* Adjust text color */
+  font-size: 15px; /* Adjust font size */
+  margin-left: 10px; /* Add margin between the logo and text */
+}
+
+
+
+
+
+/* .chat-history p{
+  margin-top: 1px;
+  color: black;
+  font-size: 20px;
+} */
+.chat-history {
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.chat-history-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.chat-history-item p {
+  font-size: 10px;
+  color:   #f8f9fa ;
+ 
+}
+
+
+
+
+
+
+
+
+.user-dropdown {
+  position: fixed;
+
+  bottom: 10px; /* Adjust bottom spacing */
+  left: 30px; /* Adjust left spacing */
+  display: flex;
+  align-items: center;
+}
+
+.user-dropdown .dropdown-content {
+  position: absolute;
+  bottom: 100%; /* Position dropdown above the icon */
+  left: 0;
+  background-color:none;
+  min-width: 200px;
+  box-shadow: 0 -8px 16px 0 rgba(0,0,0,0.2); /* Adjust shadow direction */
+  z-index: 1;
+}
+
+
+
+
+  
+
+
+.user-dropdown .dropdown-content button {
+  margin-bottom: 4px;
+  width: 100%;
+  text-align: left;
+  padding: 12px 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+}
+
+.user-dropdown:hover .dropdown-content {
+  display: block;
+}
+.user-dropdown .dropdown-content .logout-btn{
+  margin-bottom: 4px;
+  
+}
+.user-dropdown .dropdown-content .logout-btn,
+.user-dropdown .dropdown-content .Feedback-btn {
+  width: 100%;
+  text-align: left;
+  padding: 12px 16px;
+  border: 2px solid;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  
+}
+
+
+
+.user-dropdown .dropdown-content .logout-btn a,
+.user-dropdown .dropdown-content .Feedback-btn a {
+  color: #040303; /* Adjust link color */
+  text-decoration: none;
+}
+
+.user-dropdown .dropdown-content .logout-btn:focus,
+.user-dropdown .dropdown-content .Feedback-btn:focus {
+  outline: none;
+}

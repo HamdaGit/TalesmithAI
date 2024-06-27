@@ -1,0 +1,102 @@
+.links {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 10px; /* Adjust padding as needed */
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #f8f9fa ; /* Adjust color as needed */
+    margin-right: 10px; /* Add spacing between links */
+  }
+  
+  .links a:hover {
+    text-decoration: none; /* Add underline on hover */
+  }
+  
+
+.Feedback {
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #373f41;
+
+  }
+  
+  .Feedback-header {
+    margin-top: 10%;
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #f8f9fa ;
+    width: 100%;
+  }
+  .Feedback-header p{
+    margin-top: 10px;
+    text-align: center;
+    margin-left: auto; /* Pushes the paragraph to the middle */
+    margin-right: auto; /* Pushes the paragraph to the middle */
+    max-width: 65%;
+    font-size: 20px;
+    color: #f8f9fa ;
+  }
+  /* Feedback.css */
+
+.success-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+  }
+  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%; /* Adjust this width as needed */
+    max-width: 800px; /* Ensure the form doesn't get too wide */
+    margin: 0 auto; /* Center the form */
+  }
+  
+  form div {
+    margin-bottom: 1em;
+    width: 100%; /* Ensure the div takes the full width of the form */
+  }
+  
+  .textarea {
+    border: 2px solid black;
+    font-size:20px;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    width: 60%; /* Full width of the parent container */
+    height: 100px; /* Adjust height as needed */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  }
+  .Feedback-button-container{
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Feedback-button {
+    border: 2px solid !important;
+    background-color: #f3e8e8  !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    color: #000000 !important;
+    padding: 10px !important;
+    align-items: center !important;
+    left: 400px !important;
+  }
+  
+  .Feedback-button:hover {
+    background-color:#000000 !important; 
+     color: #ffffff !important;
+  } 
