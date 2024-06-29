@@ -1,0 +1,41 @@
+# Django and Django Rest Framework
+Django==5.0.6
+djangorestframework>=3.12,<4.0
+
+# Stripe for payments
+stripe== 9.9.0
+
+# Django CORS headers
+django-cors-headers>=3.5,<4.0
+
+# Gunicorn for running the application
+gunicorn>=20.0,<21.0
+
+# OpenAI API for ChatGPT
+openai== 1.30.3
+
+# React dependencies
+# Note: These are typically managed by npm/yarn in the frontend package.json
+# Example entries if you want to document them here:
+react>=17.0.0
+react-dom>=17.0.0
+bootstrap>=5.0.0
+axios>=0.21.1
+
+# Other Django dependencies
+psycopg2>=2.9.0  # If you use PostgreSQL locally or in production
+dj-database-url>=0.5.0
+whitenoise>=5.2.0  # For serving static files in production
+
+# Optional but commonly used
+django-environ>=0.8.0  # For environment variable management
+
+# Testing tools
+pytest>=6.0.0
+pytest-django>=4.0.0
+
+# Linting and code quality
+flake8>=3.8.0
+
+# Other utilities
+requests>=2.24.0
