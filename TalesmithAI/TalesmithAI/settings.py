@@ -67,7 +67,7 @@ ROOT_URLCONF = 'TalesmithAI.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'frontend_static', 'build')], 
+        'DIRS': [os.path.join(BASE_DIR, 'frontend/build')], 
         'APP_DIRS': True,  # Disable app template loading
         'OPTIONS': {
             'context_processors': [
@@ -149,7 +149,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
 
-    os.path.join(BASE_DIR, 'frontend_static', 'build', 'static'),
+    os.path.join(BASE_DIR, 'frontend/build/static'),
 
 ]
 # settings.py
@@ -171,7 +171,7 @@ REST_FRAMEWORK = {
 }
 [
     BASE_DIR / "frontend_static",
-    os.path.join(BASE_DIR, 'frontend_static' ,'static'),
+    os.path.join(BASE_DIR, 'frontend' ,'static'),
 ]
 
 # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
