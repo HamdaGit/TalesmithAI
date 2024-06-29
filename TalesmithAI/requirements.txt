@@ -17,10 +17,10 @@ openai== 1.30.3
 # React dependencies
 # Note: These are typically managed by npm/yarn in the frontend package.json
 # Example entries if you want to document them here:
-react>=17.0.0
-react-dom>=17.0.0
-bootstrap>=5.0.0
-axios>=0.21.1
+#react>=17.0.0
+#react-dom>=17.0.0
+#bootstrap>=5.0.0
+#axios>=0.21.1
 
 # Other Django dependencies
 psycopg2>=2.9.0  # If you use PostgreSQL locally or in production
