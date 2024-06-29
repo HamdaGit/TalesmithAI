@@ -169,10 +169,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     ],
 }
-[
-    BASE_DIR / "frontend_static",
-    os.path.join(BASE_DIR, 'frontend' ,'static'),
-]
+
 
 # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
