@@ -14,6 +14,8 @@ gunicorn>=20.0,<21.0
 # OpenAI API for ChatGPT
 openai== 1.30.3
 
+python-decouple>=3.6,<4.0
+
 # React dependencies
 # Note: These are typically managed by npm/yarn in the frontend package.json
 # Example entries if you want to document them here:
