@@ -54,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 CORS_ALLOWED_ORIGINS = [
@@ -152,6 +153,10 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'frontend/build/static'),
 
 ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 # settings.py
 
 STRIPE_SECRET_KEY = 'sk_test_51POOuLRwnPTAWSL72Sv9DqrJ47ZKoA6j7moQWi6acc6qCYYhUnh22gkY3FZhRkrgMR0jvLUZoZ9ZWqn66R6NTBDN00Ewder02i'
