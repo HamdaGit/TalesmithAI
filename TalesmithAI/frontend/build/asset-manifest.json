@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b4fd924d.css",
+    "main.js": "/static/js/main.83fca7b8.js",
+    "static/media/Tales-Logo.png": "/static/media/Tales-Logo.b6310f73cfddd162581f.png",
+    "static/media/Tales-logo1.png": "/static/media/Tales-logo1.ae3f0d0f9113ca0c09a6.png",
+    "index.html": "/index.html",
+    "main.b4fd924d.css.map": "/static/css/main.b4fd924d.css.map",
+    "main.83fca7b8.js.map": "/static/js/main.83fca7b8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4fd924d.css",
+    "static/js/main.83fca7b8.js"
+  ]
+}
