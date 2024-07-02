@@ -124,8 +124,7 @@ SESSION_ENGINE = 'django.contrib.sessions.backends.db'  # Default
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 SESSION_COOKIE_AGE = 1209600  # Two weeks in seconds
 
-CSRF_TRUSTED_ORIGINS = ['http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:8000']
-
+CSRF_TRUSTED_ORIGINS = ['http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:8000','http://127.0.0.1:8000']
 
 CORS_ALLOW_ALL_ORIGINS = True
 CSRF_COOKIE_SECURE = False  # Set to True in production
@@ -133,7 +132,9 @@ CSRF_COOKIE_HTTPONLY = True
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:8000/',  # Add the origin of your frontend application
 )
-# Ensure these are set correctly
+SECURE_SSL_REDIRECT = False
+SECURE_HSTS_SECONDS = 0
+
 SESSION_COOKIE_HTTPONLY = True
 SESSION_COOKIE_SECURE = True  # Set to False if you're not using HTTPS
 
@@ -153,7 +154,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'frontend/build/static'),
 
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
@@ -174,8 +174,6 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     ],
 }
-
-
 # BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
