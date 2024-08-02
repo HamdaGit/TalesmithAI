@@ -13,6 +13,6 @@ TALESMITHAI represents an innovative approach to interactive storytelling, devel
 
 ## Frameworks Used
 - Frontend: React.js
-- Backend: Django, Django Rest Framework
-- API: Openai, Django REST Framework
+- Backend: Python, Django, Django Rest Framework
+- API: Openai, REST APIs
 - Database: Sqlite
