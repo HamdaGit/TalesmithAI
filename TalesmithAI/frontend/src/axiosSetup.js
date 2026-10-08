@@ -4,7 +4,7 @@ import axios from 'axios';
 import Cookies from 'js-cookie';
 
 const axiosInstance = axios.create({
-    baseURL: 'http://localhost:8000/',
+    baseURL: '/',
     withCredentials: true,
     headers: {
         'Content-Type': 'application/json',
@@ -18,7 +18,7 @@ axiosInstance.interceptors.request.use(
         let token = Cookies.get('csrftoken');
         if (!token) {
             try {
-                const response = await axios.get('http://localhost:8000/api/get_csrf/', { withCredentials: true });
+                const response = await axios.get('/api/get_csrf/', { withCredentials: true });
                 token = response.data.csrfToken;
                 Cookies.set('csrftoken', token);
             } catch (error) {

@@ -13,6 +13,7 @@ gunicorn>=20.0,<21.0
 
 # OpenAI API for ChatGPT
 openai== 1.30.3
+httpx<0.28
 
 python-decouple>=3.6,<4.0
 

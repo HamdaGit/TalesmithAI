@@ -127,6 +127,7 @@ def get_gpt_response(message):
 
 @csrf_exempt
 @api_view(['POST'])
+@permission_classes([IsAuthenticated])
 def chat_with_gpt(request):
     try:
         print(f"Request data: {request.data}")  # Debug print statement
@@ -144,13 +145,13 @@ def chat_with_gpt(request):
         response = get_gpt_response(message)
         print(f"OpenAI API response: {response}")
         
-        if user.is_authenticated and not user.is_staff and not user.is_superuser:
+        if not user.is_staff and not user.is_superuser:
             print('Authenticated User:', user)
             user_instance = CustomUser.objects.get(id=user.id)
             ChatMessage.objects.create(user=user_instance, message=message, response=response)
         else:
-            print('User is not authenticated or not a customer user')
-            return JsonResponse({'error': 'Authentication required'}, status=status.HTTP_401_UNAUTHORIZED)
+            print('Staff and superuser accounts cannot use chat')
+            return JsonResponse({'error': 'Customer account required'}, status=status.HTTP_403_FORBIDDEN)
 
         return JsonResponse({'response': response})
     except Exception as e:

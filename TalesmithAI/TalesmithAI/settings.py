@@ -111,7 +111,7 @@ SECURE_SSL_REDIRECT = False
 SECURE_HSTS_SECONDS = 0
 
 SESSION_COOKIE_HTTPONLY = True
-SESSION_COOKIE_SECURE = True  # Set to False if you're not using HTTPS
+SESSION_COOKIE_SECURE = False  # Local development uses HTTP
 
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
